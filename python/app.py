@@ -29,6 +29,12 @@ def search_route():
     Search for answers!
 
     Accepts a 'query' as JSON post, returns the full answer.
+    
+    the solutiom may be :
+    
+   1. create virtual table FTS5 and use Match instead of the like in the quary 
+   2. if the request corect run throw the result and print 
+    2.1 if not then create a proper message for the usser 
 
     curl -d '{"query":"Star Trek"}' -H "Content-Type: application/json" -X POST http://localhost:5000/search
     """
